@@ -13,6 +13,8 @@ import Birthday from './sections/birthday/Birthday.vue'
 import NotBirthday from './sections/not-birthday/NotBirthday.vue'
 import { JAKES_BDAY_DAY_OF_YEAR } from './constants';
 
+
+
 export default {
   name: 'App',
   components: {
@@ -20,7 +22,7 @@ export default {
     NotBirthday
   },
   data: () => ({
-    isBirthday: dayjs().dayOfYear() === JAKES_BDAY_DAY_OF_YEAR
+    isBirthday: window.location.search == '?f=t' || dayjs().dayOfYear() === JAKES_BDAY_DAY_OF_YEAR
   })
 }
 </script>

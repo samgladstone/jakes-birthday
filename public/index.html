@@ -19,9 +19,16 @@
         cursor: url("cursor.png"), auto;
       }
 
-      .cursor-active {
+      .csr-active {
         cursor: url("cursor-active.png"), auto;
       }
+
+    #sound-container {
+      position: absolute;
+      left: -100vw;
+      top: -100vh;
+      opacity: 0;
+    }
     </style>
   </head>
   <body>
@@ -29,6 +36,12 @@
       <strong>Ah shucks, you need to get yourself to a better browser with javascript before you can see the magic!.</strong>
     </noscript>
     <div id="app"></div>
+    <div id="sound-container">
+      <audio id="eat-btn" src="sound-eat-btn.mp3" preload="auto" ></audio>
+      <audio id="examine-btn" src="sound-examine-btn.mp3" preload="auto"></audio>
+      <audio id="examine-btn-2" src="sound-examine-btn-2.mp3" preload="auto"></audio>
+      <audio id="interact-btn" src="sound-interact-btn.mp3" preload="auto"></audio>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
