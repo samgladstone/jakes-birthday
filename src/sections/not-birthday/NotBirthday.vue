@@ -2,8 +2,8 @@
     <div>
         <p>Dear Jake,</p>
         <p>As you're probably aware, it's not your birthday yet.</p>
-        <p>You still need to way another:</p>
-        <p style="font-size: 1.4em">{{days}} Day{{plural(days)}} {{hours}} Hour{{plural(hours)}} {{minutes}} Minute{{plural(minutes)}} {{seconds}} Second{{plural(seconds)}}</p>
+        <p>You still need to wait another:</p>
+        <p style="font-size: 1.4em">{{days}} Day{{plural(days)}}, {{hours}} Hour{{plural(hours)}}, {{minutes}} Minute{{plural(minutes)}}, {{seconds}} Second{{plural(seconds)}}</p>
         <p>A little more patience is necessary...</p>
     </div>
 </template>
