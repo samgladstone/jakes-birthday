@@ -51,7 +51,7 @@ export default {
           setTimeout(() => {this.showCoin = false}, 250);
       },
       countdownComplete() {
-        window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=true&mute=0";
       },
       eat() {
         playSound(eatBtnSound);
