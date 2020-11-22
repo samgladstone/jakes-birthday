@@ -3,7 +3,12 @@
         <p>Dear Jake,</p>
         <p>As you're probably aware, it's not your birthday yet.</p>
         <p>You still need to wait another:</p>
-        <p style="font-size: 1.4em">{{days}} Day{{plural(days)}}, {{hours}} Hour{{plural(hours)}}, {{minutes}} Minute{{plural(minutes)}}, {{seconds}} Second{{plural(seconds)}}</p>
+        <div class="counter">
+            <span>{{days}} Day{{plural(days)}}, </span>
+            <span>{{hours}} Hour{{plural(hours)}}, </span>
+            <span>{{minutes}} Minute{{plural(minutes)}}, </span>
+            <span>{{seconds}} Second{{plural(seconds)}}</span>
+        </div>
         <p>A little more patience is necessary...</p>
     </div>
 </template>
@@ -55,3 +60,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    .counter {
+        font-size: 1.4em;
+    }
+</style>
