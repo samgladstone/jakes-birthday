@@ -22,7 +22,7 @@ export default {
     NotBirthday
   },
   data: () => ({
-    isBirthday: window.location.hash == 'force' || dayjs().dayOfYear() === JAKES_BDAY_DAY_OF_YEAR
+    isBirthday: window.location.hash == '#force' || dayjs().dayOfYear() === JAKES_BDAY_DAY_OF_YEAR
   })
 }
 </script>
